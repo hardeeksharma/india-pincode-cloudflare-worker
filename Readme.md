@@ -19,13 +19,20 @@ The **India Pincode API Fetcher** is a lightweight, serverless solution for retr
 
 To set up the project:
 
-1. Clone the repository:
+- Clone the repository:
    ```bash
-   git clone https://github.com/your-username/pincode-api-fetcher.git
-   cd pincode-api-fetcher
-2. Install the dependencies
+   https://github.com/hardeeksharma/india-pincode-cloudflare-worker.git
+   
+   cd india-pincode-cloudflare-workers
+- Install the dependencies
     ```bash
     npm install
+    ```
+- Run locally
+  ```bash
+  npm run dev
+  ```
+
 ## Usage
 This project is designed to run as a serverless function. The main logic resides in src/index.ts and is structured to handle incoming API requests.
 
