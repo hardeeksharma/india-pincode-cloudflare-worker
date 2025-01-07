@@ -1,8 +1,8 @@
-# Pincode API Fetcher
+# India Pincode API Fetcher
 
 ## Overview
 
-The **Pincode API Fetcher** is a lightweight, serverless solution for retrieving detailed information about a specific Indian pincode. It leverages the [Post Office Pincode API](https://api.postalpincode.in) to provide accurate location details such as the city and state associated with a given pincode. The project includes robust input validation and user-friendly error handling.
+The **India Pincode API Fetcher** is a lightweight, serverless solution for retrieving detailed information about a specific Indian pincode. It leverages the [Post Office Pincode API](https://api.postalpincode.in) to provide accurate location details such as the city and state associated with a given pincode. The project includes robust input validation and user-friendly error handling.
 
 ---
 
