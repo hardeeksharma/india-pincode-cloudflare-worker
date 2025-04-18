@@ -30,6 +30,7 @@ export default {
 
 			if (data[0].Status === "Success") {
 				const details = data[0].PostOffice[0];
+				console.log(details);
 				return new Response(
 					JSON.stringify({
 						success: true,
@@ -38,8 +39,7 @@ export default {
 						state: details.State,
 					}),
 					{
-						headers: { "Content-Type": "application/json", 
-								"Cache-Control": "max-age=86400" },
+						headers: { "Content-Type": "application/json"},
 						status: 200,
 					}
 				);
@@ -58,7 +58,7 @@ export default {
 				);
 			}
 
-			return new Response(JSON.stringify({ success: false, error: "Something went wrong" }), {
+			return new Response(JSON.stringify({ success: false, error: error }), {
 				headers: { "Content-Type": "application/json" },
 				status: 500,
 			});
