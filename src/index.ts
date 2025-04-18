@@ -30,7 +30,6 @@ export default {
 
 			if (data[0].Status === "Success") {
 				const details = data[0].PostOffice[0];
-				console.log(details);
 				return new Response(
 					JSON.stringify({
 						success: true,
@@ -50,6 +49,7 @@ export default {
 				});
 			}
 		} catch (error) {
+			console.error("Error:", error);
 			if (error instanceof z.ZodError) {
 				// Handle Zod validation errors
 				return new Response(
@@ -58,7 +58,7 @@ export default {
 				);
 			}
 
-			return new Response(JSON.stringify({ success: false, error: error }), {
+			return new Response(JSON.stringify({ success: false, error: "Something went wrong. Please try again later." }), {
 				headers: { "Content-Type": "application/json" },
 				status: 500,
 			});
